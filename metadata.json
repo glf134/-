@@ -1,0 +1,5 @@
+{
+  "name": "智能评标系统",
+  "description": "基于AI的智能评标系统，用于自动分析和对比招标文件与供应商投标文件。",
+  "requestFramePermissions": []
+}
