@@ -13,6 +13,7 @@ export const MOCK_USERS: User[] = [
 // Added missing 'tenderDocName', 'ruleCount', and supported enum statuses.
 export const MOCK_PROJECTS: Project[] = [
   { id: '101', title: '2024年第四季度高性能服务器采购项目', code: 'ZB-2024-001', createDate: '2024-11-15', status: ProjectStatus.READY_FOR_REVIEW, tenderDocName: '招标文件_技术规范_v1.pdf', bidderCount: 3, ruleCount: 5 },
+  { id: '104', title: '2024年智能安防监控系统升级', code: 'ZB-2024-020', createDate: '2024-12-10', status: ProjectStatus.COMPLETED, tenderDocName: '安防系统升级招标文件.pdf', bidderCount: 4, ruleCount: 42 },
   { id: '102', title: '办公园区二期装修工程', code: 'ZB-2024-005', createDate: '2024-11-20', status: ProjectStatus.PROCESSING, tenderDocName: '施工要求说明书.pdf', bidderCount: 2, ruleCount: 0 },
   { id: '103', title: '企业CRM系统授权续费', code: 'ZB-2024-012', createDate: '2024-12-01', status: ProjectStatus.DRAFT, tenderDocName: '', bidderCount: 0, ruleCount: 0 },
 ];

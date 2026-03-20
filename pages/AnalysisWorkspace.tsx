@@ -257,6 +257,19 @@ export const AnalysisWorkspace: React.FC<AnalysisWorkspaceProps> = ({ project, o
          </div>
       </div>
 
+      {/* 基本信息与金额异常分析结果 */}
+      <div className="bg-rose-50 border border-rose-100 rounded-2xl p-5 flex items-start space-x-4 animate-in fade-in slide-in-from-left-4 duration-700 delay-150">
+        <div className="p-2 bg-rose-100 text-rose-600 rounded-lg">
+          <AlertTriangle size={20} />
+        </div>
+        <div className="space-y-1">
+          <h4 className="text-sm font-black text-rose-900">基本信息与金额异常分析结果</h4>
+          <p className="text-xs font-bold text-rose-700/80 leading-relaxed">
+            经系统深度比对，检测到<span className="text-rose-600 underline underline-offset-2">投标方 A 与 投标方 B 的税号、办公地址、联系电话及银行账户完全一致</span>，存在极高串标风险。此外，各投标方<span className="text-rose-600 underline underline-offset-2">投标金额呈现明显的阶梯状规律（差额均为 10w）</span>，已被系统自动判定为异常风险点，请评审专家务必重点核查。
+          </p>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {MOCK_BIDDERS.map((bidder, idx) => (
           <div key={bidder.id} className="bg-white rounded-[2.5rem] border border-slate-200 shadow-sm overflow-hidden flex flex-col group hover:shadow-xl transition-all">

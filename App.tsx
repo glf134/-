@@ -17,7 +17,12 @@ const App: React.FC = () => {
 
   const handleOpenProject = (id: string) => {
     setCurrentProjectId(id);
-    setActiveView('project_detail');
+    const project = projects.find(p => p.id === id);
+    if (project?.status === ProjectStatus.COMPLETED) {
+      setActiveView('analysis_view');
+    } else {
+      setActiveView('project_detail');
+    }
   };
 
   const handleCreateProject = () => {
