@@ -189,7 +189,7 @@ export const AnalysisWorkspace: React.FC<AnalysisWorkspaceProps> = ({ project, o
               <Fingerprint size={24} />
            </div>
            <div>
-              <h3 className="text-xl font-black text-slate-900 tracking-tight">相似度分析</h3>
+              <h3 className="text-xl font-black text-slate-900 tracking-tight">中国安能集团 - 相似度分析</h3>
               <p className="text-sm text-slate-400 font-bold uppercase tracking-widest mt-0.5">Collusion Risk & Content Overlap Detection</p>
            </div>
         </div>
@@ -252,7 +252,7 @@ export const AnalysisWorkspace: React.FC<AnalysisWorkspaceProps> = ({ project, o
             <Building2 size={24} />
          </div>
          <div>
-            <h3 className="text-xl font-black text-slate-900 tracking-tight">投标方基本信息对比</h3>
+            <h3 className="text-xl font-black text-slate-900 tracking-tight">中国安能集团 - 投标方基本信息对比</h3>
             <p className="text-sm text-slate-400 font-bold uppercase tracking-widest mt-0.5">Bidder Basic Information Comparison</p>
          </div>
       </div>
@@ -343,7 +343,7 @@ export const AnalysisWorkspace: React.FC<AnalysisWorkspaceProps> = ({ project, o
             <Zap size={24} />
          </div>
          <div>
-            <h3 className="text-xl font-black text-slate-900 tracking-tight">标书属性分析</h3>
+            <h3 className="text-xl font-black text-slate-900 tracking-tight">中国安能集团 - 标书属性分析</h3>
             <p className="text-sm text-slate-400 font-bold uppercase tracking-widest mt-0.5">Bidder Document Attribute Analysis</p>
          </div>
       </div>
@@ -631,7 +631,7 @@ export const AnalysisWorkspace: React.FC<AnalysisWorkspaceProps> = ({ project, o
                        <BarChart3 size={24} />
                     </div>
                     <div>
-                       <h3 className="text-xl font-black text-slate-900 tracking-tight">智能评标评估快报</h3>
+                       <h3 className="text-xl font-black text-slate-900 tracking-tight">中国安能集团 - 智能评标评估快报</h3>
                        <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-0.5">Automated Risk Assessment Report</p>
                     </div>
                  </div>

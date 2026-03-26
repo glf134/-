@@ -5,7 +5,8 @@ import {
   Settings, 
   Bell,
   Moon,
-  User as UserIcon
+  User as UserIcon,
+  Building2
 } from 'lucide-react';
 
 interface LayoutProps {
@@ -19,7 +20,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, activeView, onNavigate
     <div className="flex h-screen bg-white overflow-hidden">
       {/* Mini Sidebar */}
       <aside className="w-16 bg-brand-900 flex flex-col items-center py-6 space-y-8 z-30">
-        <div className="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">TG</div>
+        <div className="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">AN</div>
         <div className="flex-1 flex flex-col space-y-6">
           <button onClick={() => onNavigate('dashboard')} className={`p-2 rounded-lg transition-colors ${activeView === 'dashboard' ? 'text-white bg-white/10' : 'text-slate-400 hover:text-white'}`}>
             <LayoutDashboard size={24} />
@@ -37,16 +38,13 @@ export const Layout: React.FC<LayoutProps> = ({ children, activeView, onNavigate
         {/* Top Navbar */}
         <header className="h-16 bg-white border-b border-slate-100 flex items-center justify-between px-8 z-20">
           <div className="flex items-center space-x-3">
-             <div className="text-brand-700 font-bold text-lg">文档智能-标书督察</div>
-             <div className="h-4 w-px bg-slate-200"></div>
-             <div className="text-slate-400 text-sm italic">智能运维审查系统</div>
+             <div className="p-1.5 bg-brand-600 text-white rounded-lg">
+                <Building2 size={20} />
+             </div>
+             <div className="text-brand-700 font-bold text-lg">中国安能集团</div>
           </div>
 
           <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2 bg-green-50 text-green-600 px-3 py-1 rounded-full text-xs font-medium border border-green-100">
-              <span className="w-2 h-2 rounded-full bg-green-500"></span>
-              <span>系统运行正常 • AI 引擎就绪</span>
-            </div>
             <div className="flex items-center space-x-4 text-slate-500">
                <button className="p-1 hover:bg-slate-50 rounded-full"><Moon size={20} /></button>
                <button className="p-1 hover:bg-slate-50 rounded-full relative">

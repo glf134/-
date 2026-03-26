@@ -20,8 +20,8 @@ export const Dashboard: React.FC<DashboardProps> = ({ projects, onOpenProject, o
     <div className="p-10 max-w-[1600px] mx-auto space-y-10 overflow-auto h-full">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold text-slate-900">标书审查</h1>
-          <p className="text-slate-400 mt-1">项目概览与管理</p>
+          <h1 className="text-3xl font-bold text-slate-900">AI智能标书审查</h1>
+          <p className="text-slate-400 mt-1">基于AI大模型的自动标书审查，精准识别不合规项，降低人为疏漏，提升审查效率</p>
         </div>
         <button 
           onClick={onCreateNew}

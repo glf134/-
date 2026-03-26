@@ -131,7 +131,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onAnalysi
          <div className="max-w-6xl mx-auto space-y-12">
             <div className="flex items-center space-x-4">
               <button onClick={onBack} className="p-2 hover:bg-slate-100 rounded-full text-slate-400 transition-colors"><ArrowLeft size={24} /></button>
-              <h1 className="text-3xl font-bold text-slate-900">废标项检查</h1>
+              <h1 className="text-3xl font-bold text-slate-900">中国安能集团 - 废标项检查</h1>
             </div>
 
             <div className="grid grid-cols-2 gap-12">
